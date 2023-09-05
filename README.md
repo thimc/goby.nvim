@@ -47,7 +47,7 @@ end)
 ## Plugin support
 
 The following plugin(s) are currently supported:
-- [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter/) syntax highlighting.
+- [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter/) syntax highlighting
 - [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive)
 
 Pull requests are more than welcome!
