@@ -68,7 +68,6 @@ M.setup = function()
 
 		StatusLine = { bg = colors.background, fg = colors.foreground },
 		StatusLineNC = { bg = colors.background, fg = colors.number },
-		FloatBorder = { fg = colors.foreground },
 
 		Visual = { bg = colors.visual },
 		Cursor = { bg = colors.gray },
@@ -77,7 +76,7 @@ M.setup = function()
 		CursorLine = { bg = colors.visual, fg = colors.foreground },
 
 		ColorColumn = { bg = colors.visual },
-		LineNr = { fg = colors.visual },
+		LineNr = { fg = colors.gray },
 
 		Comment = { fg = colors.comment, italic = config.italics },
 
@@ -154,6 +153,8 @@ M.setup = function()
 		TabLineFill = { link = "Normal" },
 		TabLineSel = { bg = colors.visual, fg = colors.foreground },
 
+		QuickFixLine = { link = "Visual" },
+
 		-- fugitive.nvim
 		diffAdded = { link = "DiffAdd" },
 		diffRemoved = { link = "DiffDelete" },
@@ -178,6 +179,7 @@ M.setup = function()
 		["@method"] = { link = "Normal" },
 		["@punctuation"] = { link = "Normal" },
 		["@type.go"] = { link = "Normal" },
+		["@field.go"] = { link = "Normal" },
 
 		-- health
 		Conceal = { link = "Normal" },
