@@ -72,7 +72,7 @@ M.setup = function()
 		Visual = { bg = colors.visual },
 		Cursor = { bg = colors.gray },
 
-		MatchParen = { bg = colors.visual, fg = colors.search },
+		MatchParen = { bg = colors.gray, fg = colors.visual },
 		CursorLine = { bg = colors.visual, fg = colors.foreground },
 
 		ColorColumn = { bg = colors.visual },
@@ -166,6 +166,9 @@ M.setup = function()
 
 		-- xml
 		xmlTag = { link = "Normal" },
+
+		--json
+		jsonBraces = { link = "Normal" },
 
 		-- markdown
 		markdownBlockquote = { fg = colors.comment },
