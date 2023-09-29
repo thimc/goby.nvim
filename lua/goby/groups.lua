@@ -70,7 +70,7 @@ M.setup = function()
 		StatusLineNC = { bg = colors.background, fg = colors.number },
 
 		Visual = { bg = colors.visual },
-		Cursor = { bg = colors.gray },
+		Cursor = { bg = colors.foreground },
 
 		MatchParen = { bg = colors.gray, fg = colors.visual },
 		CursorLine = { bg = colors.visual, fg = colors.foreground },
@@ -184,11 +184,14 @@ M.setup = function()
 		["@type.go"] = { link = "Normal" },
 		["@field.go"] = { link = "Normal" },
 
-		-- health
+		-- health check
 		Conceal = { link = "Normal" },
 		healthHeadingChar = { link = "Normal" },
 		helpSectionDelim = { link = "healthHeadingChar" },
 
+		NotificationInfo = { fg = colors.foreground, bg = colors.background },
+		NotificationError = { fg = colors.type, bg = colors.background },
+		NotificationWarning = { fg = colors.keyword, bg = colors.background },
 	}
 
 	return groups
