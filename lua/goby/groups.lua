@@ -75,8 +75,13 @@ M.setup = function()
 		MatchParen = { bg = colors.gray, fg = colors.visual },
 		CursorLine = { bg = colors.visual, fg = colors.foreground },
 
+		Folded     = { bg = colors.visual, fg = colors.comment },
+		FoldColumn = { bg = colors.gray, fg = colors.comment },
+
 		ColorColumn = { bg = colors.visual },
-		LineNr = { fg = colors.gray },
+		LineNrAbove = { fg = colors.gray },
+		LineNrBelow = { fg = colors.gray },
+		LineNr = { fg = colors.foreground },
 
 		Comment = { fg = colors.comment, italic = config.italics },
 
